@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .login-card h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-card label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .login-card input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-card button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-card button:hover {
+            background-color: #45a049;
+        }
+        .login-card .back-link {
+            display: block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .login-card .back-link:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <h1>เข้าสู่ระบบ</h1>
+        <form action="login" method="post">
+            <label for="username">ชื่อผู้ใช้:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">เข้าสู่ระบบ</button>
+        </form>
+        <a class="back-link" href="index.html">กลับไปหน้าหลัก</a>
+    </div>
+</body>
+</html>
